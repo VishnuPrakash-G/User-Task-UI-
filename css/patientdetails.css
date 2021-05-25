@@ -5,7 +5,6 @@ body{
     /* background-image: url("/Login Form/images/6587e57994f81a1711363009cf98a301.png"); */
     background-image: url("background.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .logospace{
     padding: 20px;
