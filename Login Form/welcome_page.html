@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="shortcut icon" href="images/smallicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/welcomepage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image">
+        <img src="images/hosplogo.png" id="logo" alt="HospitalLogo" height="150px" width="150px" padding: 20px>
+    </div>
+    <script>
+        var name = sessionStorage.getItem("name");
+        // document.getElementById("welcomemsg").innerHTML = name;
+        // document.write("<h1>Welcome "+ name +"</h1>");
+        
+        // var number = 5;
+        document.body.appendChild(document.createElement('h1'));
+        document.querySelector("body h1:last-child").id = "jstext";
+        document.querySelector("#jstext").innerHTML = "Welcome" + " " + name + " " + "!!!";
+    </script>
+    <button>Explore</button>
+    <!-- <img src="images/undraw_medical_care_movn.png" alt="vectorimg" height="500px" width="500px"> -->
+</body>
+
+</html>

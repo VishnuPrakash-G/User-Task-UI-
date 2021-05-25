@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details !!!</title>
+    <link rel="stylesheet" href="css/patientdetails.css">
+    <link rel="shortcut icon" href="images/smallicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logospace">
+        <img src="images/hosplogo.png" alt="HospitalLogo" height="150px" width="150px">
+    </div>
+    <div class="container">
+        <h1>Patient Details</h1>
+        <form action="welcome_page.html" id="logon" onsubmit="return checkID(this)">
+            <div class="radio">
+                <input type="radio" name="cust" id="ecust" onclick="patientVerify()">
+                <label for="ecust">Existing Patient</label>
+                <input type="radio" name="cust" id="ncust" onclick="patientVerify()">
+                <label for="ncust">New Patient</label>
+            </div>
+            <!-- <div class="buttons">
+                <input onclick="patientVerify()" type="submit" value="Choose">
+            </div> -->
+            <div class="input_box">
+                <input id = "patientname" type="text" required>
+                <span></span>
+                <label for="pname">Patient Name</label>
+            </div>
+            <div class="input_box">
+                <input id = "patientid" type="text" name="userid" required>
+                <span></span>
+                <label for="pid">Patient ID</label>
+            </div>
+            <div class="input_box">
+                <input id = "phone" type="text" name="patientphone" required>
+                <span></span>
+                <label for="phone">Phone Number</label>
+            </div>
+            <div class="input_box">
+                <input type="text" required>
+                <span></span>
+                <label for="aname">Attender Name</label>
+            </div>
+            <div class="input_box">
+                <input type="text" name="aphone" required>
+                <span></span>
+                <label for="acontact">Attender Contact</label>
+            </div>
+            <div class="input_box">
+                <input type="text" required>
+                <span></span>
+                <label for="typeofill">Type of Illness</label>
+            </div>
+            <div class="input_box">
+                <input type="text" required>
+                <span></span>
+                <label for="treatdoc">Treating Doctor</label>
+            </div>
+            <div class="input_box">
+                <input type="text" required>
+                <span></span>
+                <label for="roomno">Room Number</label>
+            </div>
+            <div class="buttons">
+                <input id="proceedbutton" type="submit" onclick="patientVerify()" value="Proceed">
+                <input id="cancelbutton" type="submit" onclick="location.reload()" value="Cancel">
+            </div><!-- <input type="submit" value="Cancel"> -->
+        </form>
+        <!-- <input id="cancelbutton" type="submit" onclick="location.reload()" value="Cancel"> -->
+    </div>
+</body>
+<script src="javascript/patientDetails.js"></script>
+</html>
